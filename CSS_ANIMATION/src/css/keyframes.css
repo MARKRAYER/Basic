@@ -1,0 +1,55 @@
+@keyframes rotateWingLeft {
+    50% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+@keyframes rotateWingRight {
+    50% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+@keyframes houseMove {
+    25% {
+        top: 2%;
+    }
+    75% {
+        top: 8%;
+    }
+    100% {
+        top: 5%;
+    }
+}
+@keyframes moneyMove {
+    25% {
+        top: 40%;
+    }
+    75% {
+        top: 50%;
+    }
+    100% {
+        top: 45%;
+    }
+}
+@keyframes educationMove {
+    25% {
+        bottom: 18%;
+    }
+    75% {
+        bottom: 6%;
+    }
+    100% {
+        bottom: 12%;
+    }
+}
+@keyframes cloudMove {
+    100% {
+        left: 100%;
+        transform: translate(100%, 0);
+    }
+}

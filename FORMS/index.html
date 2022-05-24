@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.css">
+	<title>Forms</title>
+</head>
+<body>
+	<form class="form" action="" method="post">
+		<div class="first-title">
+			<h2 class="text-header">Choose payment method</h2>
+			<button class="close"></button>
+		</div>
+		<div class="card">
+			<div class="method">
+				<h3 class="pay-meth">Payment method</h3>
+				<div class="radio-item">
+					<input class="cursor" type="radio" name="pay-method" value="crcard" checked=""><span class="text-radio">Credit Card</span>
+				</div>
+				<div class="radio-item">
+					<input class="cursor" type="radio" name="pay-method" value="paypal"><span class="text-radio">PayPal</span>
+				</div>
+				<div class="radio-item">
+					<input class="cursor" type="radio" name="pay-method" value="webmoney"><span class="text-radio">WebMoney</span>
+				</div>
+			</div>
+			<div class="card-info">
+				<div class="card-first-row">
+					<div class="card-num">
+						<label for="card-num"><span class="name-inp">card number</span></label>
+						<input type="text" class="option-inp num-border" id="card-num" placeholder="6655 3311 5511 9901" maxlength="16" required="">
+					</div>
+					<div class="card-date">
+						<label for="card-date"><span class="name-inp">expiry date</span></label>
+						<input type="text" class="option-inp option-date" id="card-date" placeholder="MM / YY" maxlength="4" required="">
+					</div>
+				</div>
+				<div class="card-second-row">
+					<div class="card-holder">
+					<label for="card-holder"><span class="name-inp">name on card</span></label>
+					<input type="text" class="option-inp" id="card-holder" placeholder="Enter your name on card" maxlength="40" required="">
+					</div>
+					<div class="card-cvv">
+						<label for="card-date"><span class="name-inp">cvv code</span></label>
+						<input type="password" class="option-inp option-date" id="card-date" placeholder="Enter CVV code" maxlength="3" required="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="buttons">
+			<button class="cancel" type="reset"><span class="text-button">Cancel</span></button>
+			<button class="save" type="submit"><span class="text-button text-save">Save</span></button>
+		</div>
+		</form>
+</body>
+</html>

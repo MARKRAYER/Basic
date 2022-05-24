@@ -1,0 +1,162 @@
+@import url('reset.css');
+@import url('keyframes.css');
+
+body {
+    overflow: hidden;
+}
+.wrapper {
+    background-color: rgb(77, 155, 210);
+    width: 100%;
+    height: 100vh;
+}
+
+/*CLOUDS*/
+.cloudBig,
+.cloudSmall,
+.cloudSmall2 {
+    transform: translate(-100%, 0);
+    animation-name: cloudMove;
+    animation-duration: 16s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.cloudBig {
+    width: 200px;
+    height: 120px;
+    position: absolute;
+    animation-duration: 30s;
+    top: 12%;
+    left: 0;
+}
+
+.cloudSmall,
+.cloudSmall2 {
+    position: absolute;
+    left: 0;
+}
+
+.cloudSmall {
+    width: 120px;
+    top: 60%;
+    animation-duration: 20s;
+}
+
+.cloudSmall2 {
+    width: 70px;
+    top: 32%;
+}
+
+/*WRAPPERS*/
+.houseWrapper,
+.moneyWrapper,
+.educationWrapper {
+    position: absolute;
+}
+
+.houseWrapper {
+    top: 5%;
+    left: calc(50% - 330px / 2);
+    animation-name: houseMove;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.moneyWrapper {
+    top: 45%;
+    right: 6%;
+    animation-name: moneyMove;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.educationWrapper {
+    bottom: 12%;
+    left: calc(50% - 140px / 2);
+    animation-name: educationMove;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/*WINGS*/
+.wingLeft,
+.wingRight {
+    width: 120px;
+    position: absolute;
+    z-index: 1;
+}
+.wingLeft {
+    transform-origin: bottom right;
+    animation-name: rotateWingLeft;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.wingRight {
+    transform-origin: bottom left;
+    animation-name: rotateWingRight;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+/*IMG*/
+.house,
+.money,
+.education {
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.house {
+    width: 250px;
+}
+
+.money {
+    padding: 30px;
+    width: 150px;
+}
+
+.education {
+    padding: 20px;
+    width: 100px;
+}
+
+
+/*WING*/
+.houseWingLeft {
+    top: 12%;
+    left: -14%;
+}
+.houseWingRight {
+    top: 12%;
+    right: -14%;
+}
+
+.moneyWingLeft {
+    width: 80px;
+    top: 8%;
+    left: -18%;
+
+}
+.moneyWingRight {
+    width: 80px;
+    top: 8%;
+    right: -18%;
+}
+
+.educationWingLeft {
+    width: 55px;
+    top: 10%;
+    left: -16%;
+}
+
+.educationWingRight {
+    width: 55px;
+    top: 10%;
+    right: -16%;
+}

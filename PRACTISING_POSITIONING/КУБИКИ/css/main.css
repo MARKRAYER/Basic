@@ -1,0 +1,25 @@
+@import url('reset.css');
+
+div {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+}
+.blue {
+	background-color: skyblue;
+}
+.green {
+	top: 100px;
+	left: 100px;
+	background-color: green;
+}
+.salmon {
+	top: -100px;
+	left: 100px;
+	background-color: salmon;
+}
+.aquamarine {
+	top: 100px;
+	left: 100px;
+	background-color: aquamarine;
+}

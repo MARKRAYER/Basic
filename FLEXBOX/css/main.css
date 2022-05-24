@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Source+Sans+Pro:wght@400;700&display=swap');
+@import url('reset.css');
+
+body {
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Source Sans Pro', 'sans-serif';
+}
+.maim {
+    display: flex;
+    flex-wrap: wrap;
+}
+.theme {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 20px;
+}
+.theme:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+.block_img {
+    flex: 1 1 400px;
+}
+.theme_img {
+    width: 100%;
+    height: 100%;
+}
+.theme_inf {
+    flex: 1 1 400px;
+    padding: 10px;
+}
+.theme_title {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 24px;
+}

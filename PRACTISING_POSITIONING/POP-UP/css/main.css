@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans&family=Ubuntu:wght@400;700&display=swap');
+* {
+	margin: 0px;
+	padding: 0px;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Ubuntu';
+}
+a, button {
+	font-family: 'Montserrat';
+}
+p {
+	font-family: 'Open Sans';
+}
+.container {
+	width: 1170px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+header {
+	background: rgb(77,191,254);
+	background: linear-gradient(135deg, rgba(77,191,254,1) 35%, rgba(55,143,217,1) 100%);
+	color: #fff;
+}
+.logo {
+	padding-top: 68px;
+}
+
+span {
+	font-size: 59px;
+
+}
+
+.move {
+	background: #ffd429;
+	padding: 22px 30px;
+	text-decoration: none;
+	color: #2e2a1b;
+	font-style: 15px;
+	border: none;
+	cursor: pointer;
+}
+.content_header {
+	display: flex;
+	justify-content: space-between;
+}
+.title {
+	font-size: 37px;
+	width: 552px;
+	margin-bottom: 50px;
+}
+.text_title {
+	font-size: 16px;
+	width: 450px;
+	margin-bottom: 45px;
+}
+.block {
+	padding-top: 145px;
+}
+.travel {
+	margin-top: 25px;
+}
+.title_head {
+	text-align: center;
+	padding-top: 105px;
+	padding-bottom: 75px;
+}
+.skills {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 120px;
+}
+.skill {
+	width: 300px;
+	background: url('../img/icon1.jpg') no-repeat top;
+}
+.skill-title {
+	font-size: 19px;
+	text-align: center;
+	margin-top: 80px;
+}
+.skill-text {
+	font-size: 15px;
+	text-align: center;
+	margin-top: 15px;
+}
+.traveling {
+	background: url('../img/icon2.jpg') no-repeat top;
+}
+.value {
+	background: url('../img/icon3.jpg') no-repeat top;
+}
+.form-section {
+	background: #ecf3f8;
+	padding-bottom: 84px;
+}
+.title-form{
+	padding-bottom: 65px;
+}
+.form-block {
+	width: 340px;
+	margin: 0 auto;
+}
+
+.form-item {
+	width: 100%;
+	padding: 15px 25px;
+	box-sizing: border-box;
+	height: 50px;
+	margin-bottom: 16px;
+}
+button {
+	margin-bottom: 84px;
+}
+.footer-block {
+	background: #164d7a;
+}
+.text-footer {
+	padding-top: 60px;
+	padding-bottom: 65px;
+	text-align: center;
+	color: #fff;
+}
+.pop_up {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 9999;
+
+}
+.pop_up p {
+	width: 300px;
+	line-height: 200px;
+	position: fixed;
+	top: calc(50% - 100px);
+	left: calc(50% - 150px);
+	background-color: blue;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 30px;
+	padding: 10px;
+	text-align: center;
+
+}

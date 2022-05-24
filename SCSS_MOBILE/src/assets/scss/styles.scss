@@ -1,0 +1,193 @@
+
+
+
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap");
+@import "_var";
+
+@media (min-width: 320px) and (max-width: 480px) {
+body {
+                font-family: "Nunito Sans", sans-serif;
+        }
+
+        .wrapper {
+                margin: 0 50px;
+        }
+
+        .headerWrapper {
+                display: flex;
+                justify-content: space-between;
+                padding-top: 15px;
+                padding-bottom: 30px;
+
+                &__time {
+                        margin-left: 5px;
+                        font-size: 15px;
+                        line-height: 18px;
+                        letter-spacing: -0.3px;
+                }
+        }
+
+        .icons {
+                &__icon {
+                        margin-left: 2px;
+                }
+        }
+
+        .welcome {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 16px;
+
+                &__burgerMenu {
+                        background: url("../img/burger_menu.png") no-repeat;
+                        width: 32px;
+                        height: 32px;
+                        border: none;
+                        cursor: pointer;
+                }
+        }
+
+        .greetings {
+                &__logo {
+                        margin-right: 20px;
+                        cursor: pointer;
+                }
+
+                &__text {
+                        display: inline-block;
+                        font-weight: map-get($weight, big);
+                        line-height: map-get($line_height, big);
+                        font-size: map-get($size, big);
+                        vertical-align: top;
+                        letter-spacing: -0.5px;
+                }
+        }
+
+        .menu {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 16px;
+                &__button {
+                        font-weight: map-get($weight, medium);
+                        font-size: map-get($size, small);
+                        line-height: map-get($line_height, medium);
+                        background-color: #fff;
+                        border: none;
+                        box-sizing: border-box;
+                        &:hover {
+                                font-weight: map-get($weight, exbig);
+                                color: #fff;
+                                background-color: #393939;
+                                border-radius: 16px;
+
+                        }
+                }
+        }
+
+        .zen {
+                background-color: #FFE3D3;
+                border-radius: 16px;
+                padding: 16px 16px 0;
+                &__img {
+                        display: block;
+                        margin: auto;
+                        width: 100%;
+                        padding-bottom: 16px;
+                }
+        }
+        .zen, .reflection, .visualization, .loving, .focused {
+                margin-bottom: 16px;
+        }
+        .reflection, .visualization, .loving, .focused {
+                padding: 16px;
+        }
+        .zenWrapper {
+                display: flex;
+                justify-content: space-between;
+        }
+        h2 {
+                font-weight: map-get($weight, big);
+                font-size: map-get($size, medium);
+                line-height: map-get($line_height, small);
+                letter-spacing: -0.5px;
+                color: #191D21;
+                margin-bottom: 8px;
+        }
+        h3 {
+                display: inline-block;
+                font-weight: map-get($weight, exbig);
+                font-size: map-get($size, exsmall);
+                line-height: 16px;
+                letter-spacing: -0.5px;
+                color: #191D21;  
+                background-color: #FFFFFF;
+                border-radius: 16px;
+                padding: 5px 10px;
+        }
+        .directionWrapper {
+                display: flex;
+        }
+        .directionWrapperLeft {
+                width: calc(50% - 8px);
+                margin-right: 16px;
+                display: flex;
+                flex-direction: column;
+        }
+
+        .reflection {
+                background-color: #E7F6FF;
+                border-radius: 16px;
+                &__img {
+                        width: 100%;
+                }
+        }
+
+        .loving {
+                background: #FFFACA;
+                border-radius: 16px;
+                &__img {
+                        width: 100%;
+                }
+        }
+
+        .directionWrapperRight {
+                width: calc(50% - 8px);
+                display: flex;
+                flex-direction: column;
+        }
+
+        .visualization {
+                background: #FFE8EC;
+                border-radius: 16px;
+                &__img {
+                        width: 100%;
+                }
+        }
+
+        .focused {
+                background: #EEE6FF;
+                border-radius: 16px;
+                &__img {
+                        width: 100%;
+                }
+        }
+
+        .homeBar {
+                position: fixed;
+                bottom: 8px;
+                left: calc(50% - 134px / 2);
+                width: 134px;
+                height: 5px;
+                background: #ACB8C2;
+                opacity: 0.4;
+                border-radius: 100px;
+                cursor: pointer;
+        }
+}

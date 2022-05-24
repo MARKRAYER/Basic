@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine&family=Montserrat:wght@400;700&display=swap');
+@import url('reset.css');
+
+.bg-cover {
+	background: #202124 url('../img/bg.png') no-repeat center top / cover;
+}
+.main-info {
+	width: 1200px;
+	margin: 0 auto;
+	font-family: 'Montserrat', sans-serif;
+}
+.head {
+	padding: 35px 0 100px;
+}
+ul, li {
+	display: inline-block;
+}
+li {
+	padding-right: 50px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	color: #fff;
+}
+.logo {
+	margin: 0 110px 0;
+}
+.contact-inf {
+	padding-bottom: 120px;
+}
+.write-us {
+	width: 585px;
+	background-color: #fff;
+	box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.14);
+	border-radius: 12px;
+	display: inline-block;
+	margin-right: 68px;
+	float: left;
+}
+.title-info {
+	padding: 65px 220px 16px;
+	display: inline-block;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 42px;
+	text-align: center;
+}
+.write-inf {
+	padding-left: 83px;
+	padding-bottom: 40px;
+}
+.mail {
+	padding-bottom: 50px;
+}
+.text-lab {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 28px;
+	display: block;
+	letter-spacing: 1.2px;
+	text-transform: uppercase;
+	color: #ACACAC
+}
+input {
+	box-sizing: border-box;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+}
+.e-mail {
+	width: 420px;
+	height: 42px;
+	background: #F6F6F6;
+	border-radius: 5px;
+	padding: 10px 20px;
+}
+.massage-area {
+	height: 86px;
+	opacity: 30%;
+}
+textarea {
+	width: 420px;
+	height: 86px;
+	background: #F6F6F6;
+	border-radius: 5px;
+	box-sizing: border-box;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	padding: 10px 20px;
+	opacity: 30%;
+}
+.button-inf {
+	text-align: center;
+	padding-bottom: 80px;
+}
+button {
+	width: 320px;
+	height: 62px;
+	background: #A054C6;
+	border-radius: 100px;
+}
+.text-button {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 22px;
+	color: #FFFFFF;
+}
+.contacts {
+	width: 487px;
+	height: 513px;
+	border: 2px solid #D4D3D3;
+	border-radius: 10px;
+	display: inline-block;
+}
+.contact-title {
+	padding: 65px 168px 18px;
+	color: #FFFFFF;
+}
+hr {
+	width: 43px;
+	height: 3px;
+	background: #A054C6;
+	color: #A054C6;
+	margin-bottom: 45px;
+}
+.contact-item {
+	width: 175px;
+	height: 95px;
+	padding-left: 50px;
+	display: inline-block;
+	float: left;
+}
+.contact-heading {
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 28px;
+	letter-spacing: 1.2px;
+	color: #ACACAC;
+}
+.cotnact-text {
+	font-family: Domine;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 22px;
+	color: #fff;
+}
