@@ -1,0 +1,38 @@
+@mixin commonText {
+    font-size: 21px;
+    line-height: 30px;
+    color: #000000;
+}
+
+@mixin textRed {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 50px;
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+}
+
+@mixin textCases {
+    font-size: 24px;
+    line-height: 28px;
+    color: #686887;
+}
+
+@mixin textCasesGrey {
+    font-size: 18px;
+    line-height: 26px;
+    color: #B3B3BA;
+}
+
+@mixin textPublications {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+
+@mixin textPublicationsBlue {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #24A3FF;
+}

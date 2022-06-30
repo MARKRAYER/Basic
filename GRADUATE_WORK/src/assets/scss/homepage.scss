@@ -1,0 +1,81 @@
+.header {
+    padding: 55px 60px 0;
+    margin-bottom: 185px;
+    display: flex;
+    justify-content: space-between;
+
+    &__wrapper {
+        background-image: url('../assets/img/bgFirstScreenHomepage.png');
+        background-size: cover;
+        height: 100vh;
+    }
+
+    &__logo {
+    }
+
+    &__mainInf {
+    }
+
+    &__contacts {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    &__navigation {
+        text-align: right;
+    }
+}
+.contacts {
+    color: #fff;
+    &__lg {
+        margin-right: 20px;
+    }
+
+    &__location {
+        margin-right: 15px;
+        color: #fff;
+    }
+
+    &__phone {
+        margin-right: 10px;
+        color: #fff;
+    }
+
+    &__fb {
+        width: 24px;
+        height: 24px;
+        position: relative;
+        bottom: 4px;
+    }
+
+    &_point {
+        background-color: #E6E6F0;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        margin-top: 5px;
+        margin-right: 10px;
+    }
+}
+.lg {
+
+    &__item {
+        display: inline-block;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fff;
+        &:hover{
+            background: #F0145A;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    }
+}
+.navigation {
+    
+    &__item {
+        text-decoration: none;
+        color: #fff;
+        margin-left: 15px;
+    }
+}
