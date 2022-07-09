@@ -1,81 +1,130 @@
-.header {
-    padding: 55px 60px 0;
-    margin-bottom: 185px;
-    display: flex;
-    justify-content: space-between;
-
+@import '_mixins';
+@import '_services';
+* {
+    color: #fff;
+    scroll-behavior: smooth;
+}
+.header{
     &__wrapper {
         background-image: url('../assets/img/bgFirstScreenHomepage.png');
+        background-repeat: no-repeat;
         background-size: cover;
         height: 100vh;
     }
-
-    &__logo {
-    }
-
-    &__mainInf {
-    }
-
-    &__contacts {
-        display: flex;
-        margin-bottom: 10px;
-    }
-
-    &__navigation {
-        text-align: right;
-    }
 }
-.contacts {
-    color: #fff;
-    &__lg {
-        margin-right: 20px;
-    }
-
-    &__location {
-        margin-right: 15px;
-        color: #fff;
-    }
-
-    &__phone {
-        margin-right: 10px;
-        color: #fff;
-    }
-
-    &__fb {
-        width: 24px;
-        height: 24px;
+//-------SYSADMIN-------
+.sysAdmin {
+    &__text {
+        text-align: center;
         position: relative;
-        bottom: 4px;
+        top: 100px;
+        right: 50px;
+        font-size: 38px;
+        line-height: 45px;
     }
 
-    &_point {
-        background-color: #E6E6F0;
-        width: 6px;
-        height: 6px;
-        border-radius: 50%;
-        margin-top: 5px;
-        margin-right: 10px;
+    &__img {
+        position: absolute;
+        bottom: 0;
+        left: calc(30%);
+        width: 35%;
+    }
+    
+    &__shadow {
+        background-image: url(../assets/img/shade.png);
+        position: absolute;
+        width: 100%;
+        height: 200px;
+        bottom: 0;
     }
 }
-.lg {
+.scrollDown {
+    position: absolute;
+    bottom: 1%;
+    left: calc(50% - 42px / 2);
+    cursor: pointer;
+}
+//-------SYSADMIN-------
 
-    &__item {
-        display: inline-block;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: #fff;
-        &:hover{
-            background: #F0145A;
-            border-radius: 8px;
-            cursor: pointer;
+//-------MAIN-------
+.main {
+    padding: 80px 60px 0;
+    &__wrapper {
+        background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+        border-radius: 0px 0px 12px 12px;
+        margin-bottom: 60px;
+    }
+
+    &__lowyers {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+    &__services{
+        padding-bottom: 80px;
+    }
+}
+.lowyers {
+
+    &__titleWrapper {
+        display: flex;
+        flex-direction: column;
+        margin-right: 40px;
+        align-items: flex-end;
+    }
+
+    &__title {
+        font-size: 42px;
+        line-height: 50px;
+        color: #B3B3BA;
+        cursor: pointer;
+        font-weight: 700;
+        padding-bottom: 20px;
+        -webkit-appearance: none;
+        appearance: none;
+        border: none;
+        background-color: transparent;
+        border-right: #643E72;
+        &:hover, &:focus {
+            background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        &:last-child{
+            text-align: end;
+        }
+    }
+    &__textWrapper {
+        padding-left: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__text {
+        &:first-child{
+            font-size: 32px;
+            line-height: 38px;
+            padding-bottom: 20px;
+        }
+        &:last-child{
+            @include commonText;
+            opacity: 0.8;
         }
     }
 }
-.navigation {
-    
-    &__item {
+//-------SERVICES-------
+.services{
+    &__link{
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        opacity: 0.5;
+        font-size: 14px;
+        line-height: 17px;
         text-decoration: none;
-        color: #fff;
-        margin-left: 15px;
+        margin-bottom: 5px;
     }
 }
+//-------SERVICES-------
+
+//-------MAIN-------

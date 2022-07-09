@@ -11,13 +11,49 @@
 </head>
 
 <body>
-    @@include('./components/Header.html',{
-        "phoneNumber": "+38 (050) 390 15 91",
-        "url":{
-            "logo": "./assets/img/logoHomepage.png",
-            "fb": "./assets/icons/fbWhite.svg"
-        }
-    })
+    <div class="header__wrapper">
+        @@include('./components/Header.html',{
+            "phoneNumber": "+38 (050) 390 15 91",
+            "url":{
+                "logo": "./assets/img/logoHomepage.png",
+                "fb": "./assets/icons/fbWhite.svg"
+            }
+        })
+        <div class="sysAdmin">
+            <img src="./assets/img/PBig.png" alt="" class="sysAdmin__img">
+            <h1 class="sysAdmin__text">системний адміністратор<br>правових рішень</h1>
+            <div class="sysAdmin__shadow"></div>
+            <a href="#scroll" class="scrollDown"><img src="./assets/img/scrollDown.png" alt="img"></a>
+        </div>
+    </div>
+    <div class="main__wrapper">
+        <div id="scroll" class="main">
+            <div class="main__lowyers">
+                <div class="lowyers__titleWrapper">
+                    <button class="lowyers__title">Послідовні</button>
+                    <button class="lowyers__title">Клієнтоорієнтовані</button>
+                    <button class="lowyers__title">Інноваційні</button>
+                    <button class="lowyers__title">Бізнес-орієнтовані<br>юристи</button>
+                </div>
+                <img class="lowyers__separator" src="./assets/img/separator.png" alt="separator">
+                <div class="lowyers__textWrapper">
+                    <p class="lowyers__text">Перевертаємо уявлення про юридичні<br>послуги</p>
+                    <p class="lowyers__text">
+                        Консолідуючи багаторічний досвід і практику, юристи<br>
+                        компанії супроводжують складні проекти і досягають<br>
+                        прийняття ряду важливих для галузі рішень. Багато з них<br>
+                        формують практику застосування морського права в Україні.</p>
+                </div>
+            </div>
+            <div class="main__services">
+                <a href="#" class="services__link">послуги ></a>
+                @@include('./components/Services/ServicesWrapper.html',{
+                    "serviceTitle":'Що ми вміємо робити краще за інших?'
+                })
+            </div>
+        </div>
+        
+    </div>
 </body>
 
 </html>
