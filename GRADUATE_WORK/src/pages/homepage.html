@@ -13,47 +13,89 @@
 <body>
     <div class="header__wrapper">
         @@include('./components/Header.html',{
-            "phoneNumber": "+38 (050) 390 15 91",
-            "url":{
-                "logo": "./assets/img/logoHomepage.png",
-                "fb": "./assets/icons/fbWhite.svg"
-            }
+        "phoneNumber": "+38 (050) 390 15 91",
+        "url":{
+        "logo": "./assets/img/logoHomepage.png",
+        "fb": "./assets/icons/fbWhite.svg"
+        }
         })
         <div class="sysAdmin">
-            <img src="./assets/img/PBig.png" alt="" class="sysAdmin__img">
+            <img src="./assets/img/PBig.png" alt="img" class="sysAdmin__img">
             <h1 class="sysAdmin__text">системний адміністратор<br>правових рішень</h1>
             <div class="sysAdmin__shadow"></div>
             <a href="#scroll" class="scrollDown"><img src="./assets/img/scrollDown.png" alt="img"></a>
         </div>
     </div>
-    <div class="main__wrapper">
-        <div id="scroll" class="main">
-            <div class="main__lowyers">
-                <div class="lowyers__titleWrapper">
-                    <button class="lowyers__title">Послідовні</button>
-                    <button class="lowyers__title">Клієнтоорієнтовані</button>
-                    <button class="lowyers__title">Інноваційні</button>
-                    <button class="lowyers__title">Бізнес-орієнтовані<br>юристи</button>
+    <main>
+        <div class="main__linearWrapper">
+            <div id="scroll" class="main">
+                <div class="main__lowyers">
+                    <div class="lowyers__titleWrapper">
+                        <button class="lowyers__title">Послідовні</button>
+                        <button class="lowyers__title">Клієнтоорієнтовані</button>
+                        <button class="lowyers__title">Інноваційні</button>
+                        <button class="lowyers__title">Бізнес-орієнтовані<br>юристи</button>
+                    </div>
+                    <img class="lowyers__separator" src="./assets/img/separator.png" alt="separator">
+                    <div class="lowyers__textWrapper">
+                        <p class="lowyers__text">Перевертаємо уявлення про юридичні<br>послуги</p>
+                        <p class="lowyers__text">
+                            Консолідуючи багаторічний досвід і практику, юристи<br>
+                            компанії супроводжують складні проекти і досягають<br>
+                            прийняття ряду важливих для галузі рішень. Багато з них<br>
+                            формують практику застосування морського права в Україні.</p>
+                    </div>
                 </div>
-                <img class="lowyers__separator" src="./assets/img/separator.png" alt="separator">
-                <div class="lowyers__textWrapper">
-                    <p class="lowyers__text">Перевертаємо уявлення про юридичні<br>послуги</p>
-                    <p class="lowyers__text">
-                        Консолідуючи багаторічний досвід і практику, юристи<br>
-                        компанії супроводжують складні проекти і досягають<br>
-                        прийняття ряду важливих для галузі рішень. Багато з них<br>
-                        формують практику застосування морського права в Україні.</p>
-                </div>
-            </div>
-            <div class="main__services">
-                <a href="#" class="services__link">послуги ></a>
-                @@include('./components/Services/ServicesWrapper.html',{
+                <div class="main__services">
+                    <a href="./services.html" class="services__link">послуги ></a>
+                    @@include('./components/Services/ServicesWrapper.html',{
                     "serviceTitle":'Що ми вміємо робити краще за інших?'
-                })
+                    })
+                </div>
             </div>
         </div>
+        <div class="main__command">
+            <div class="command__wrapper">
+                <img src="./assets/img/person1.png" alt="img" class="command__img">
+                <div class="command__textWrapper">
+                    <a href="./team.html" class="command__link">команда ></a>
+                    <h2 class="command__text_red">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну,
+                        вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
+                    <p class="command__name">Олександр Олександровський</p>
+                    <p class="command__post">Керуючий партнер</p>
+                </div></div>
+            <div class="command__points">
+                <div class="command__point"></div>
+                <div class="command__point"></div>
+                <div class="command__point"></div>
+            </div>
+        </div>
+        @@include('./components/Cases/CasesWrapper.html', {
+            "casesTitle": 'Успішні кейси'
+        })
+        @@include('./components/Scools/ScoolsWrapper.html',{
+            "scoolTitle": 'Вже довіряють нам'
+        })
+        <div class="main__bgPublAndFooter">
+            @@include('./components/Publications/PublicationsWrapper.html',{
+                "publication":{
+                    "link": 'Публікації >',
+                    "title": 'Нам є що розповісти'
+                }
+            })
+            @@include('./components/Footer.html',{
+                "footer":{
+                    "location": 'Одеса, Адміральський пр., 3',
+                    "map": 'Подивитися на мапі',
+                    "img": './assets/icons/fbBlue.svg',
+                    "phone": '+38 (050) 390 15 91',
+                    "mail": 'contact@hlegals.net',
+                    "company": '© 2021 ТОВ Юридична компанія «HLEGALS»'
+                }
+            })
+        </div>
         
-    </div>
+    </main>
 </body>
 
 </html>

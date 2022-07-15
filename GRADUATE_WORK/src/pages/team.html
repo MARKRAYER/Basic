@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/team.css">
+</head>
+<body>
+    <header>
+        @@include('./components/Header.html',{
+            "phoneNumber": "+38 (050) 390 15 91",
+            "url":{
+            "logo": "./assets/img/logoTeam.png",
+            "fb": "./assets/icons/fbGrey.svg"
+            }
+            })
+    </header>
+    <main>
+        <h2 class="team__text_red">
+            Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.
+        </h2>
+        <div class="team">
+            <div class="team__row">
+                <div class="team__item">
+                    <img src="./assets/img/person1.png" alt="img" class="team__img">
+                    <p class="team__name">Олександр Олександровський</p>
+                    <p class="team__post">Керуючий партнер</p>
+                    <a href="./team_member_page.html" class="team__link">></a href="#">
+                </div>
+                <div class="team__item">
+                    <img src="./assets/img/person2.png" alt="img" class="team__img">
+                    <p class="team__name">Оксана Кобзар</p>
+                    <p class="team__post">Equity partner, Attorney-at-law</p>
+                    <a href="./team_member_page.html" class="team__link">></a href="#">
+                </div>
+                <div class="team__item">
+                    <img src="./assets/img/person3.png" alt="img" class="team__img">
+                    <p class="team__name">Владислав Мельник</p>
+                    <p class="team__post">Associate</p>
+                    <a href="./team_member_page.html" class="team__link">></a href="#">
+                </div>
+            </div>
+            <div class="team__row">
+                <div class="team__item">
+                    <img src="./assets/img/person4.png" alt="img" class="team__img">
+                    <p class="team__name">Владислав Мельник</p>
+                    <p class="team__post">Associate</p>
+                    <a href="./team_member_page.html" class="team__link">></a href="#">
+                </div>
+                <div class="team__item">
+                    <img src="./assets/img/person5.png" alt="img" class="team__img">
+                    <p class="team__name">Оксана Кобзар</p>
+                    <p class="team__post">Equity partner, Attorney-at-law</p>
+                    <a href="./team_member_page.html" class="team__link">></a href="#">
+                </div>
+                <div class="team__item">
+                    <img src="./assets/img/person6.png" alt="img" class="team__img">
+                    <p class="team__name">Юлія Гудименко</p>
+                    <p class="team__post">Associate, Attorney-at-law</p>
+                    <a href="./team_member_page.html" class="team__link">></a  href="#">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        @@include('./components/Footer.html',{
+            "footer":{
+                "location": 'Одеса, Адміральський пр., 3',
+                "map": 'Подивитися на мапі',
+                "img": './assets/icons/fbBlue.svg',
+                "phone": '+38 (050) 390 15 91',
+                "mail": 'contact@hlegals.net',
+                "company": '© 2021 ТОВ Юридична компанія «HLEGALS»'
+            }
+        })
+    </footer>
+</body>
+</html>

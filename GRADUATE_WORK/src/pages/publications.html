@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/publications.css">
+</head>
+<body>
+    <header>
+        @@include('./components/Header.html',{
+            "phoneNumber": "+38 (050) 390 15 91",
+            "url":{
+            "logo": "./assets/img/logoPublications.png",
+            "fb": "./assets/icons/fbGrey.svg"
+            }
+            })
+    </header>
+    <div class="mainAndFooterWrapper">
+        <main>
+            <div class="publications__navs">
+                <button class="publications__nav">новини</button>
+                <button class="publications__nav">компанія</button>
+            </div>
+            @@include('./components/Publications/PublicationsWrapperNews.html',{
+                "publication":{
+                    "link": '',
+                    "title": ''
+                }
+            })
+        </main>
+        <footer>
+            @@include('./components/Footer.html',{
+                "footer":{
+                    "location": 'Одеса, Адміральський пр., 3',
+                    "map": 'Подивитися на мапі',
+                    "img": './assets/icons/fbBlue.svg',
+                    "phone": '+38 (050) 390 15 91',
+                    "mail": 'contact@hlegals.net',
+                    "company": '© 2021 ТОВ Юридична компанія «HLEGALS»'
+                }
+            })
+        </footer>
+    </div>
+    
+</body>
+</html>

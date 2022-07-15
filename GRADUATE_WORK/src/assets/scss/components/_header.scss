@@ -59,6 +59,7 @@
         line-height: 14px;  
         letter-spacing: 1px;
         padding: 4px;
+        font-weight: 700;
         position: relative;
         bottom: 3px;
         background: none;
@@ -69,6 +70,7 @@
         &:hover, &:focus{
             background: #f0145a;
             border-radius: 8px;
+            color: #fff;
         }
     }
 }
@@ -79,6 +81,9 @@
         margin-left: 15px;
         font-size: 18px;
         line-height: 21px;
+        &:hover{
+            text-decoration: underline;
+        }
     }
 }
 //-------HEADER-------

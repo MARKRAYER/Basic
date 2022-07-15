@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service page</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/service_page.css">
+</head>
+<body>
+    <div class="bgServicePage">
+        <header>
+            @@include('./components/Header.html',{
+                "phoneNumber": "+38 (050) 390 15 91",
+                "url":{
+                "logo": "./assets/img/logoServices.png",
+                "fb": "./assets/icons/fbWhite.svg"
+                }
+                })
+        </header>
+        <main>
+            <div class="IT">
+                <div class="IT__wrapper">
+                    <img src="./assets/icons/whatWeCan1.svg" alt="icon" class="IT__icon">
+                    <h2 class="IT__text_red">IT та електронна комеція</h2>
+                    <p class="IT__text">Нескінчений потік договорів, податкові питання, трудові відносини, корпоративні папери — юридична робота відволікає вас від ведення бізнесу. Але роботи не так вже й багато, щоб наймати інхауз-юриста. </p>
+                    <p class="IT__text">До того ж, з часом робота стане однотипною і нецікавою для штатного юриста. А ще ми добре знаємо, як важко в Україні знайти хорошого кандидата з досвідом у сфері інформаційних технологій.</p>
+                    </div>
+                <button class="IT__button">Безкоштовна консультація</button>
+            </div>
+            <div class="ITService">
+                <p class="ITService__title">Послуги цього напрямку:</p>
+                <div class="ITService__flexWrapper">
+                    <div class="ITService__textWrapper">
+                        <p class="ITService__text">супровід інвестиційних проектів з розвитку портової інфраструктури;</p>
+                        <p class="ITService__text">паспортизація ГТС, внесення інформації про них в обов'язкові бази даних і реєстри;</p>
+                        <p class="ITService__text">оформлення дозвільної документації для будівництва портових терміналів;</p>
+                        <p class="ITService__text">оформлення дозвільної та іншої обов'язкової документації, необхідної для здійснення діяльності в порту (дозвіл на викиди, висновок по ОВНС, РТК і ін.);</p>
+                    </div>
+                    <div class="ITService__textWrapper">
+                        <p class="ITService__text">супровід процедур, пов'язаних з орендою державного майна в порту;</p>
+                        <p class="ITService__text">супровід процедур, пов'язаних з підтвердженням статусу портового оператора, морського агента, лінії закордонного плавання;</p>
+                        <p class="ITService__text">супровід процедур, пов'язаних з включенням компанії в межі порту;</p>
+                        <p class="ITService__text">оскарження дій, пов'язаних з незаконним нав'язуванням послуг в порту компаніями-монополістами.</p>
+                    </div>
+                </div>
+                
+            </div>
+    </div>
+    @@include('./components/Cases/CasesWrapper.html', {
+        "casesTitle": 'Успішні кейси'
+    })
+    @@include('./components/Publications/PublicationsWrapper.html',{
+        "publication":{
+            "link": 'Публікації >',
+            "title": 'Нам є що розповісти'
+        }
+    })
+        </main>
+    
+    <footer>
+        @@include('./components/Footer.html',{
+            "footer":{
+                "location": 'Одеса, Адміральський пр., 3',
+                "map": 'Подивитися на мапі',
+                "img": './assets/icons/fbBlue.svg',
+                "phone": '+38 (050) 390 15 91',
+                "mail": 'contact@hlegals.net',
+                "company": '© 2021 ТОВ Юридична компанія «HLEGALS»'
+            }
+        })
+    </footer>
+</body>
+</html>

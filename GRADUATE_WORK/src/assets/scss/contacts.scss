@@ -1,0 +1,159 @@
+@import '_mixins';
+@import './components/header';
+@import './components/footer';
+
+//--------HEADER--------
+.header {
+    margin-bottom: 85px;
+}
+
+.contacts {
+
+    &__location,
+    &__phone {
+        color: #B3B3BA;
+    }
+}
+
+.lg {
+    &__item {
+        color: #B3B3BA;
+    }
+}
+
+.navigation {
+    &__item {
+        color: #24A3FF;
+        &:hover{
+            color: #F0145A;
+        }
+    }
+}
+
+//--------HELP--------
+.help {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 80px;
+    &__contacts {
+        width: 30%;
+    }
+
+    &__form {
+        background: #F5F5FA;
+        border-radius: 12px;
+        padding: 20px;
+        width: 35%;
+    }
+}
+.contacts {
+    &__text, &__phoneNumber, &__mail{
+        @include commonText;
+    }
+    &__text, &__mail{
+        border-bottom: 4px solid #E6E6F0;
+    }
+    &__text {
+        color: #323264;
+        padding-bottom: 20px;
+        margin-bottom: 40px;
+        &_blue {
+            font-size: 12px;
+            line-height: 16px;
+            font-weight: 700;
+            color: #24A3FF;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            display: inline-block;
+            position: relative;
+            bottom: 5px;
+        }
+    }
+
+    &__phoneNumber {
+        color: #46466E;
+        margin-bottom: 20px;
+    }
+
+    &__mail {
+        color: #24A3FF;
+        display: block;
+        padding-bottom: 40px;
+        margin-bottom: 20px;
+    }
+
+    &__img {
+        margin-right: 10px;
+    }
+}
+.form {
+    &__name, &__text, &__phone, &__mail{
+        font-size: 18px;
+        line-height: 26px;
+        color: #B3B3BA;
+        padding: 10px;
+        border-radius: 8px;
+        border: none;
+        margin-bottom: 20px;
+    }
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    &__text {
+        height: 180px;
+        &_red {
+            @include textRed;
+            font-size: 32px;
+            line-height: 38px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__name {
+    }
+
+    &__label {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #B3B3BA;
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+
+    &__phone {
+    }
+
+    &__mail {
+    }
+
+    &__button {
+        background: #24A3FF;
+        box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+        border-radius: 12px;
+        color: #FFFFFF;
+        border: none;
+        padding: 15px 80px;
+        display: block;
+        margin: 0 auto;
+        &:hover{
+            background: aquamarine;
+            padding: 20px 90px;
+            transition-duration: .5s;
+            color: chocolate;
+        }
+    }
+}
+
+//--------MAP--------
+.map{
+    width: 100%;
+}
+
+//--------HEADER--------
+.footer__wrapper{
+    border: none;
+}

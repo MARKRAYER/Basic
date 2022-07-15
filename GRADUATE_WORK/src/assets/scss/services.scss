@@ -1,0 +1,26 @@
+@import '_mixins';
+@import './components/_header';
+@import './components/_services';
+@import './components/cases';
+@import './components/scools';
+@import './components/footer';
+
+//--------HEADER--------
+.headerAndServicesWrapper{
+    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    border-radius: 0px 0px 12px 12px;
+    margin-bottom: 60px;
+}
+.navigation__item{
+    &:hover{
+        color: #fff;
+    }
+}
+//--------FOOTER--------
+.footer {
+    background: #E5E5E5;
+    border-radius: 12px 12px 0px 0px;
+    &__wrapper {
+        border: none;
+    }
+}

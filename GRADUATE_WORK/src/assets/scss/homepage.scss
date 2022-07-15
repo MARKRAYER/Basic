@@ -1,15 +1,27 @@
 @import '_mixins';
-@import '_services';
+@import './components/_header';
+@import './components/_footer';
+@import './components/_services';
+@import './components/_cases';
+@import './components/_scools';
+@import './components/_publications';
+
 * {
     color: #fff;
     scroll-behavior: smooth;
 }
-.header{
+
+.header {
     &__wrapper {
         background-image: url('../assets/img/bgFirstScreenHomepage.png');
         background-repeat: no-repeat;
         background-size: cover;
         height: 100vh;
+    }
+}
+.navigation__item{
+    &:hover{
+        color: #fff;
     }
 }
 //-------SYSADMIN-------
@@ -29,7 +41,7 @@
         left: calc(30%);
         width: 35%;
     }
-    
+
     &__shadow {
         background-image: url(../assets/img/shade.png);
         position: absolute;
@@ -38,18 +50,19 @@
         bottom: 0;
     }
 }
+
 .scrollDown {
     position: absolute;
     bottom: 1%;
     left: calc(50% - 42px / 2);
     cursor: pointer;
 }
+
 //-------SYSADMIN-------
 
 //-------MAIN-------
 .main {
-    padding: 80px 60px 0;
-    &__wrapper {
+    &__linearWrapper {
         background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
         border-radius: 0px 0px 12px 12px;
         margin-bottom: 60px;
@@ -59,11 +72,17 @@
         display: flex;
         justify-content: center;
         margin-bottom: 60px;
+        padding-top: 100px;
     }
-    &__services{
+
+    &__services {
         padding-bottom: 80px;
     }
+    &__bgPublAndFooter{
+        background: #F5F5FA;
+    }
 }
+
 .lowyers {
 
     &__titleWrapper {
@@ -85,15 +104,19 @@
         border: none;
         background-color: transparent;
         border-right: #643E72;
-        &:hover, &:focus {
+
+        &:hover,
+        &:focus {
             background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        &:last-child{
+
+        &:last-child {
             text-align: end;
         }
     }
+
     &__textWrapper {
         padding-left: 40px;
         display: flex;
@@ -102,29 +125,108 @@
     }
 
     &__text {
-        &:first-child{
+        &:first-child {
             font-size: 32px;
             line-height: 38px;
             padding-bottom: 20px;
         }
-        &:last-child{
+
+        &:last-child {
             @include commonText;
             opacity: 0.8;
         }
     }
 }
+
 //-------SERVICES-------
-.services{
-    &__link{
+.services {
+    &__link {
         letter-spacing: 1px;
         text-transform: uppercase;
         opacity: 0.5;
         font-size: 14px;
         line-height: 17px;
         text-decoration: none;
+        padding-left: 60px;
         margin-bottom: 5px;
     }
 }
+
 //-------SERVICES-------
+
+
+//-------COMMAND-------
+
+.main {
+    &__command {
+        padding: 0 60px 40px;
+    }
+}
+
+.command {
+
+    &__wrapper{
+        display: flex;
+        margin-bottom: 20px;
+        background: #F5F5FA;
+        border-radius: 12px;
+    }
+    &__img {}
+
+    &__textWrapper {
+        padding: 40px 0 0 40px;
+    }
+
+    &__link {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: #24A3FF;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        &_red {
+            @include textRed;
+            margin: 10px 20px 20px 0;
+        }
+    }
+
+    &__name {
+        font-size: 18px;
+        line-height: 21px;
+        color: #B3B3BA;
+        margin-bottom: 5px;
+    }
+
+    &__post {
+        font-size: 16px;
+        line-height: 22px;
+        color: #B3B3BA;
+    }
+
+    &__points {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__point {
+        background-color: #24A3FF;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        opacity: 0.2;
+        cursor: pointer;
+        &:nth-child(-n+2){
+            margin-right: 15px;
+        }
+        &:hover{
+            opacity: 1;
+        }
+    }
+}
+
+//-------COMMAND-------
 
 //-------MAIN-------

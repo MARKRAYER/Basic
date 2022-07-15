@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/about_us.css">
+</head>
+
+<body>
+    <header>
+        @@include('./components/Header.html',{
+        "phoneNumber": "+38 (050) 390 15 91",
+        "url":{
+        "logo": "./assets/img/logoAboutUs.png",
+        "fb": "./assets/icons/fbGrey.svg"
+        }
+        })
+    </header>
+    <main>
+        <div class="services">
+            <div class="services_textWrapper">
+                <h2 class="services__text_red">Перевертаємо уявлення про юридичні послуги.</h2>
+                <p class="services__text_margin">Консолідуючи багаторічний досвід і практику, юристи компанії
+                    супроводжують складні проекти і досягають прийняття ряду важливих для галузі рішень. Багато з них
+                    формують практику застосування морського права в Україні.</p>
+                <p class="services__text">Prolegals – надійний бізнес-партнер, що підтверджується стабільним
+                    співробітництвом з міжнародними юридичними фірмами, довірою великих українських і міжнародних
+                    компаній, визнанням професійних рейтингів.</p>
+            </div>
+            <div class="services__experience">
+                <div class="services__experienceBlock">
+                    <img src="./assets/icons/flag.svg" alt="" class="services__img">
+                    <span class="services__experienceText_red">10+</span>
+                    <p class="services__experienceText">років релевантного досвіду</p>
+                </div>
+                <div class="services__experienceBlock">
+                    <img src="./assets/icons/bag.svg" alt="" class="services__img">
+                    <span class="services__experienceText_red">30+</span>
+                    <p class="services__experienceText">активних клієнтів, які довіряють нам свої доручення щомісячно
+                    </p>
+                </div>
+                <div class="services__experienceBlock">
+                    <img src="./assets/icons/star.svg" alt="" class="services__img">
+                    <span class="services__experienceText_red">500+</span>
+                    <p class="services__experienceText">годин роботи «pro bono» щорічно</p>
+                </div>
+            </div>
+        </div>
+        <div class="team">
+            <img src="./assets/img/aboutUsComand.png" alt="img" class="team__img">
+            <p class="team__text">команда</p>
+        </div>
+        <div class="quality">
+            <div class="quality__textWrapper">
+                <p class="quality__text">Історично незмінна юридична професія почала переформатовуватись в останні роки.
+                    Клієнти це відчувають, але юридичні фірми все ще опираються еволюції. Клієнти потребують зручності,
+                    простоти, прозорої оплати. Google, IBM WatsОn, Symantec Clearwell доводять, що технологічна
+                    революція в юридичних послугах розпочалася і стала неминучою.</p>
+                <p class="quality__text">Якість — це те, про що ми піклуємося найбільше.</p>
+                <p class="quality__text">Все просто. Якщо ви не задоволені нашою роботою, ми повернемо гроші. Ми
+                    довіряємо нашим клієнтам. І ми хочемо, щоб клієнти нам теж довіряли.</p>
+            </div>
+            <h2 class="quality__text_red">Якість — це те, про що ми піклуємося найбільше.</h2>
+        </div>
+        <div class="achiveAndFooterWrapper">
+            <div class="achievements">
+                <p class="achievements__text">Досягнення</p>
+                <div class="achievements__imgWrapper">
+                    <img src="./assets/img/achievements1.png" alt="img" class="achievements__img">
+                    <img src="./assets/img/achievements2.png" alt="img" class="achievements__img">
+                    <img src="./assets/img/achievements3.png" alt="img" class="achievements__img">
+                    <img src="./assets/img/achievements4.png" alt="img" class="achievements__img">
+                </div>
+                <div class="achievements__points">
+                    <div class="achievements__point"></div>
+                    <div   div class="achievements__point"></div>
+                    <div class="achievements__point"></div>
+                </div>
+            </div>
+            @@include('./components/Footer.html',{
+                "footer":{
+                    "location": 'Одеса, Адміральський пр., 3',
+                    "map": 'Подивитися на мапі',
+                    "img": './assets/icons/fbBlue.svg',
+                    "phone": '+38 (050) 390 15 91',
+                    "mail": 'contact@hlegals.net',
+                    "company": '© 2021 ТОВ Юридична компанія «HLEGALS»'
+                }
+            })
+        </div>
+    </main>
+</body>
+
+</html>

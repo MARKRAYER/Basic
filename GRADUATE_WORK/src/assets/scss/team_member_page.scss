@@ -1,0 +1,109 @@
+@import '_mixins';
+@import './components/header';
+@import './components/footer';
+
+//--------HEADER--------
+.header {
+    margin-bottom: 85px;
+}
+
+.contacts {
+
+    &__location,
+    &__phone {
+        color: #B3B3BA;
+    }
+}
+
+.lg {
+    &__item {
+        color: #B3B3BA;
+    }
+}
+
+.navigation {
+    &__item {
+        color: #24A3FF;
+        &:hover{
+            color: #F0145A;
+        }
+    }
+}
+
+//--------MAIN--------
+.main {
+    display: flex;
+    justify-content: center;
+    &__img {
+        height: 60%;
+    }
+
+    &__textWrapper {
+        width: 60%;
+        padding: 20px 30px;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 40px;
+        &_border{
+            padding-top: 40px;
+            margin-top: 20px;
+            border-top: 4px solid #E6E6F0;
+        }
+        &_red {
+            @include textRed;
+        }
+
+        &_blue {
+            font-size: 14px;
+            line-height: 17px;
+            color: #323264;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+    }
+    &__post,&__mail,&__profile{
+        display: inline-block;
+        font-size: 16px;
+    }
+    &__post {
+        line-height: 22px;
+        color: #B3B3BA;
+    }
+
+    &__point {
+        width: 6px;
+        height: 6px;
+        background: #E6E6F0;
+        border-radius:  50%;
+        margin: 0 10px;
+        display: inline-block;
+        position: relative;
+        bottom: 2px;
+    }
+
+    &__mail,&__profile{
+        line-height: 19px;
+        color: #24A3FF;
+    }
+
+    &__mail {
+    }
+
+    &__profile {
+    }
+}
+
+.footer__wrapper{
+    border: none;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}

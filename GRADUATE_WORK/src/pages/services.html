@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/services.css">
+</head>
+
+<body>
+    <div class="headerAndServicesWrapper">
+        <header>
+            @@include('./components/Header.html',{
+            "phoneNumber": "+38 (050) 390 15 91",
+            "url":{
+            "logo": "./assets/img/logoServices.png",
+            "fb": "./assets/icons/fbWhite.svg"
+            }
+            })
+        </header>
+        <main>
+            @@include('./components/Services/ServicesWrapper.html',{
+            "serviceTitle":'Що ми вміємо робити краще за інших?'
+            })
+    </div>
+            @@include('./components/Cases/CasesWrapper.html', {
+                "casesTitle": 'Успішні кейси'
+            })
+            @@include('./components/Scools/ScoolsWrapper.html',{
+                "scoolTitle": 'Вже довіряють нам'
+            })
+    </main>
+
+    <footer>
+        @@include('./components/Footer.html',{
+            "footer":{
+                "location": 'Одеса, Адміральський пр., 3',
+                "map": 'Подивитися на мапі',
+                "img": './assets/icons/fbBlue.svg',
+                "phone": '+38 (050) 390 15 91',
+                "mail": 'contact@hlegals.net',
+                "company": '© 2021 ТОВ Юридична компанія «HLEGALS»'
+            }
+        })
+    </footer>
+</body>
+
+</html>

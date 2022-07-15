@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team member</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/team_member_page.css">
+</head>
+<body>
+    <header>
+        @@include('./components/Header.html',{
+            "phoneNumber": "+38 (050) 390 15 91",
+            "url":{
+            "logo": "./assets/img/logoTeam.png",
+            "fb": "./assets/icons/fbGrey.svg"
+            }
+            })
+    </header>
+    <main class="main">
+        <img src="./assets/img/person1.png" alt="img" class="main__img">
+        <div class="main__textWrapper">
+            <h2 class="main__text_red">Олександр Кац</h2>
+            <p class="main__post">Керуючий партнер</p>
+            <div class="main__point"></div>
+            <a href="#" class="main__mail">kac@hlegals.net</a>
+            <div class="main__point"></div>
+            <a href="#" class="main__profile">Профіль в LinkedIn</a>
+            <p class="main__text main__text_border">Олександр очолює практику міжнародної торгівлі та шиппінгу. Він спеціалізується на вирішенні спорів, пов'язаних з купівлею-продажем сировинних товарів і перевезенням товарів морем.</p>
+            <p class="main__text">Десис представляє інтереси судновласників, експедиторів, вантажовласників, морських агентів, контейнерних ліній, а також міжнародних банків і клубів P & I.</p>
+            <p class="main__text_blue">Освіта</p>
+            <p class="main__text">Національний університет «Одеська юридична академія», магістр права.</p>
+            <p class="main__text_blue">Досвід роботи</p>
+            <p class="main__text">До його професійного досвіду відноситься врегулювання суперечок за англійським правом і представництво інтересів в іноземних комерційних арбітражах, таких як GAFTA, FOSFA та LMAA. Данило також представляє інтереси клієнтів у державних судах України по аналогічним спорах, а також в МКАС і МАК при ТПП України</p>
+        </div>
+    </main>
+        @@include('./components/Footer.html',{
+            "footer":{
+                "location": 'Одеса, Адміральський пр., 3',
+                "map": 'Подивитися на мапі',
+                "img": './assets/icons/fbBlue.svg',
+                "phone": '+38 (050) 390 15 91',
+                "mail": 'contact@hlegals.net',
+                "company": '© 2021 ТОВ Юридична компанія «HLEGALS»'
+            }
+        })
+</body>
+</html>

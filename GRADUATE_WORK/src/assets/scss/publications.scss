@@ -1,0 +1,104 @@
+@import '_mixins';
+@import './components/header';
+@import './components/footer';
+@import './components/publications';
+
+//--------HEADER--------
+.header {
+    margin-bottom: 60px;
+}
+
+.contacts {
+
+    &__location,
+    &__phone {
+        color: #B3B3BA;
+    }
+}
+
+.lg {
+    &__item {
+        color: #B3B3BA;
+    }
+}
+
+.navigation {
+    &__item {
+        color: #24A3FF;
+        &:hover{
+            color: #F0145A;
+        }
+    }
+}
+
+//--------PUBLICATIONS--------
+
+.mainAndFooterWrapper {
+    background: #F5F5FA;
+    border-radius: 12px 12px 0px 0px;
+    padding: 30px 0 0;
+    position: relative;
+}
+.publications{
+    padding-top: 70px;
+    &__wrapper{
+        align-items: flex-start;
+    }
+    &__link, &__title{
+        display: none;
+    }
+    &__navs{
+        background: #E6E6F0;
+        border-radius: 12px;
+        position: absolute;
+        top: 30px;
+        left: calc(50% - 300px / 2);
+        z-index: 1;
+    }
+    &__nav{
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        background: #E6E6F0;
+        border-radius: 12px;
+        color: #323264;
+        border: none;
+        padding: 10px 40px;
+        &:focus, &:hover{
+            background: #FFFFFF;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+    }
+    &__col {
+        //----delete image from publication
+        &:first-child{
+            &>.publication__item{
+                &:nth-child(odd){
+                    &>.publication__img{
+                        display: none;
+                    }
+                }
+            }
+        }
+        //-----delete all text from publication in last two blocks
+        &:nth-child(2){
+            &>.publication__item{
+                &:nth-child(even){
+                    &>.publication__textWrapper{
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+        &:nth-child(3){
+            &>.publication__item{
+                &:nth-child(2){
+                    &>.publication__textWrapper{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
